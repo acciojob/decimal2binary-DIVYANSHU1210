@@ -1,10 +1,12 @@
 function decimalToBinary(num) {
   //Write you code here
+	let n = parseFloat(num);
 	let ans = "";
-	while(num>1){
-		ans += "" + num%2;
-		num = num/2;
+	while(n>=1){
+		ans += "" + n%2;
+		n = n/2;
 	}
+	// consol.log(ans) 
 	return ans;
   
 }
