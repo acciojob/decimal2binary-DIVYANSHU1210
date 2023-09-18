@@ -3,8 +3,8 @@ function decimalToBinary(num) {
 	let n = parseFloat(num);
 	let ans = "";
 	while(n>=1){
-		ans += "" + n%2;
-		n = n/2;
+		ans = Math.floor(num % 2) + ans;
+		n = Math.floor(num / 2);
 	}
 	// consol.log(ans) 
 	return ans;
